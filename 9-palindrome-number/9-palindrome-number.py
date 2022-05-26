@@ -6,4 +6,4 @@ class Solution(object):
         """
         
         string_x = str(x)
-        return string_x == string_x[::-1]
+        return string_x == string_x[::-1] #Starts from the end towards the first taking each element. So it reverses
