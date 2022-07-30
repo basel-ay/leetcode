@@ -5,5 +5,4 @@ class Solution(object):
         :rtype: int
         """
         nums[:] = sorted(list(set(nums)))
-        
         return len(nums)
