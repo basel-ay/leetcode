@@ -20,6 +20,7 @@ class Solution(object):
                 high = mid - 1
             else:
                 low = mid + 1 
-        
-        return low
+                
+        # If not found, return the index where it would be if it were inserted in order.
+        return low 
         
