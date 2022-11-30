@@ -13,7 +13,7 @@ class Solution(object):
         # if arrangement is not possible
         if i == 0:   
             nums.reverse()
-            return 
+            return nums
         # step 2: find higher than the decreasing number then replace them
         k = i - 1 # the decreasing number
 
