@@ -14,14 +14,14 @@ class Solution(object):
         zeros_row = [False] * m
         zeros_col = [False] * n
         
-        # detect zeros
+        # detect rows and columns to be changed
         for row in range(m):
             for col in range(n):
                 if matrix[row][col] == 0:
                     zeros_row[row] = True
                     zeros_col[col] = True
         
-        # replace with 0s
+        # replace detected rows and columns with 0s
         for row in range(m):
             for col in range(n):
                 if zeros_row[row] or zeros_col[col]:
