@@ -7,7 +7,7 @@ SELECT
 CASE  
         # Even id
         WHEN id % 2 = 0 THEN id - 1 
-        # Odd, also notice that the last row has the number 5 but if we do not include this condition, row 5               will turn to row 6
+        # Odd id, also notice that the last row has the number 5 but if we do not include this condition, row 5 will turn to row 6
         WHEN id % 2 <> 0 AND id < (SELECT COUNT(*) FROM Seat) THEN id + 1
         ELSE id
     
