@@ -7,6 +7,10 @@
     - The depth of the two subtrees of every node never differs by more than one.
 
 - As it's a SORTED array, so we can get the middle element to be our root, then assign all left elements to the left, and all right elements of the root to the right using RECURSION.
+
+Time and Space coplexity:
+    :time: O(n)
+    :space: O(log n)
 """
 
 
